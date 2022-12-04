@@ -1,5 +1,7 @@
 import React from "react";
 import { IItem } from "./index";
+import minus from "../../images/minus.svg";
+import plus from "../../images/plus.svg";
 
 interface IUser extends IItem {
   onClickInvite: (id: number) => void;
@@ -33,13 +35,13 @@ export const User = ({
       </div>
       <img
         className="action"
-        src={isInvited ? "/assets/minus.svg" : "/assets/plus.svg"}
+        src={isInvited ? minus : plus}
         alt="Action"
         onClick={() => onClickInvite(id)}
         aria-label={
           isInvited
-            ? "Удалить поьзователя из списка приглашенных"
-            : "Пригласть пользователя"
+            ? "Удалить пользователя из списка приглашенных"
+            : "Пригласить пользователя"
         }
       />
     </li>

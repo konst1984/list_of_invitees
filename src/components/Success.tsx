@@ -1,4 +1,5 @@
 import React from "react";
+import success from "../images/success.svg";
 
 interface ISuccess {
   count: number;
@@ -8,7 +9,7 @@ interface ISuccess {
 export const Success = ({ count, onClickSendInvites }: ISuccess) => {
   return (
     <div className="success-block">
-      <img src="/assets/success.svg" alt="Success" />
+      <img src={success} alt="Success" />
       <h3>Успешно!</h3>
       <p>Всем {count} пользователям отправлено приглашение.</p>
       <button className="send-invite-btn" onClick={onClickSendInvites}>

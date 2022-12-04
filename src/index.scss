@@ -49,11 +49,9 @@ body {
 .users-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 30px 0 0 ;
   overflow: auto;
-  height: calc(100% - 130px);
-  margin-top: 30px;
-
+  height: auto;
   li {
     display: flex;
     align-items: center;
@@ -83,12 +81,9 @@ body {
     }
 
     h3 {
-      margin: 0;
+      margin: 5px 0 0 ;
       font-weight: 900;
       font-family: 'Merriweather', serif;
-      margin-left: 15px;
-      margin-top: 5px;
-      margin-left: 0;
       color: #182170;
     }
 
@@ -96,9 +91,8 @@ body {
       display: flex;
       align-items: center;
       font-size: 14px;
-      margin: 0;
+      margin: 3px 0 0;
       color: rgba(0, 0, 0, 0.5);
-      margin-top: 3px;
 
       svg {
         width: 16px;

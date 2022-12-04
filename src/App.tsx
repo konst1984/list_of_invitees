@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./index.scss";
 import { Success } from "./components/Success";
 import { Users } from "./components/Users";
-import { Skeleton } from "./components/Users/Skeleton";
 
 // Тут список пользователей: https://reqres.in/api/users
 
